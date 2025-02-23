@@ -26,7 +26,7 @@ const Signup = () => {
 
         console.log(name, password, email);
 
-        let result = await fetch("http://localhost:8000/register", {
+        let result = await fetch("https://car-dealer-backend-7m2r.onrender.com/register", {
             method: 'POST',
             body: JSON.stringify({ name, password, email }),
             headers: {

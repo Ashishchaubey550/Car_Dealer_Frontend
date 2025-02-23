@@ -43,7 +43,7 @@ function AddProduct() {
         });
 
         try {
-            let result = await fetch("http://localhost:8000/add", {
+            let result = await fetch("https://car-dealer-backend-7m2r.onrender.com/add", {
                 method: "POST",
                 body: formData,
             });
